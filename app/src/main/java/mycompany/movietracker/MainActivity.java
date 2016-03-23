@@ -1,25 +1,12 @@
 package mycompany.movietracker;
 
-import android.content.res.TypedArray;
+
+import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-
-// package mycompany.movietracker;
-
-import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
-import android.app.Activity;
-import android.widget.ArrayAdapter;
-import android.os.Bundle;
-import android.app.ListActivity;
-
-import java.sql.Array;
-
-import mycompany.movietracker.R;
-import mycompany.movietracker.CustomList;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -30,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 //--    private TypedArray images;
 
 /*     String[] web = {
-            "Google Plus",
+            "Google Plus",a
             "Twitter",
             "Windows",
             "Bing",
@@ -63,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         // ArrayAdapter<String> adapter;
         // images = getResources().obtainTypedArray(R.array.listbullet).getResourceId(0, 0);
         //--        images = getResources().obtainTypedArray(R.array.listbullet);
-                // imageId=getResources().getStringArray(R.array.listbullet)
+        // imageId=getResources().getStringArray(R.array.listbullet)
         //--                for (int i=0; i< images.length(); i++){
         //--                    imageId[i] = images.getResourceId(i,0);
         //--                };

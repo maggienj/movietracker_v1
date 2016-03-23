@@ -6,7 +6,7 @@
         <item pagename="movie3"> A moment to remember - watched on Feb-1-2016 </item>
         <item pagename="movie4"> A proposal - watched on Feb-5-2016 </item>
         <item pagename="movie5"> Alvin and Chipmunks - watched on Mar-1-2016 </item>
-        </string-array>
+    </string-array>
 
     <string-array name="listbullet">
         <item>@drawable/logobulletbig</item>
