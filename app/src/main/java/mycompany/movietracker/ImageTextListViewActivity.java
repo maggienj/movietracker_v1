@@ -17,7 +17,7 @@ public class ImageTextListViewActivity extends Activity implements
 
 
     public static final Integer[] images = {R.drawable.prada,
-            R.drawable.bat, R.drawable.alvin, R.drawable.myb};
+            R.drawable.bat, R.drawable.alvin, R.drawable.myb, R.drawable.myb};
 
     ListView listView;
     List<RowItem> rowItems;
@@ -38,7 +38,7 @@ public class ImageTextListViewActivity extends Activity implements
         movieWhere = getResources().getStringArray(R.array.movieWhere);
 
         rowItems = new ArrayList<RowItem>();
-        for (int i = 0; i < movieName.length - 1; i++) {
+        for (int i = 0; i < movieName.length; i++) {
             RowItem item = new RowItem(images[i], movieName[i], movieWhen[i], movieWhere[i]);
             rowItems.add(item);
         }

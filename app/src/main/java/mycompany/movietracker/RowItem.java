@@ -48,6 +48,6 @@ public class RowItem {
 
     @Override
     public String toString() {
-        return movieName + "\n" + movieWhen + "\n" + movieWhere;
+        return movieName + "\n" + " watched on " + movieWhen + "\n" + " at " + movieWhere;
     }
 }

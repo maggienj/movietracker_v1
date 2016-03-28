@@ -40,8 +40,8 @@ public class CustomListViewAdapter extends ArrayAdapter<RowItem> {
             holder = (ViewHolder) convertView.getTag();
 
         holder.txtMovieName.setText(rowItem.getMovieName());
-        holder.txtMovieWhen.setText(rowItem.getMovieWhen());
-        holder.txtMovieWhere.setText(rowItem.getMovieWhere());
+        holder.txtMovieWhen.setText("watched on " + rowItem.getMovieWhen());
+        holder.txtMovieWhere.setText("watched in " + rowItem.getMovieWhere());
         holder.imageView.setImageResource(rowItem.getImageId());
 
         return convertView;
