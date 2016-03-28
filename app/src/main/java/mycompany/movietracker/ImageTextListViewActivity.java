@@ -16,8 +16,8 @@ public class ImageTextListViewActivity extends Activity implements
         OnItemClickListener {
 
 
-    public static final Integer[] images = {R.drawable.prada,
-            R.drawable.bat, R.drawable.alvin, R.drawable.myb, R.drawable.myb};
+    public static final Integer[] images = {R.drawable.proposal,
+            R.drawable.bat, R.drawable.alvin, R.drawable.myb, R.drawable.kapoor};
 
     ListView listView;
     List<RowItem> rowItems;

@@ -18,7 +18,7 @@
     <string name="btn_name_cat5"> Movies Watched - with Friends </string>
 
     <string-array name="movieName">
-        <item pagename="movie1n"> Prada </item>
+        <item pagename="movie1n"> The Proposal </item>
         <item pagename="movie2n"> Breakfast at Tiffanys </item>
         <item pagename="movie3n"> Alvin and the Chipmunks </item>
         <item pagename="movie4n"> My Big Fat Greek Life </item>

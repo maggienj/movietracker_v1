@@ -19,7 +19,7 @@ public class Category extends AppCompatActivity {
         Button btn = (Button) findViewById(R.id.button1);
         btn.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(Category.this, MovieList.class);
+                Intent intent = new Intent(Category.this, ImageTextListViewActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -33,6 +33,38 @@ public class Category extends AppCompatActivity {
                 finish();
             }
         });
+
+        Button btn3 = (Button) findViewById(R.id.button3);
+        btn3.setOnClickListener(new OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(Category.this, ImageTextListViewActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+
+        Button btn4 = (Button) findViewById(R.id.button4);
+        btn4.setOnClickListener(new OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(Category.this, ImageTextListViewActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+
+        Button btn5 = (Button) findViewById(R.id.button5);
+        btn5.setOnClickListener(new OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(Category.this, ImageTextListViewActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+
+
     }
 
     @Override
