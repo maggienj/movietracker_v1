@@ -8,6 +8,7 @@
         <item pagename="movie5"> Alvin and Chipmunks - watched on Mar-1-2016 </item>
     </string-array>
 
+
     <string-array name="listbullet">
         <item>@drawable/logobulletbig</item>
         <item>@drawable/logobulletbig</item>

@@ -10,7 +10,7 @@ import com.squareup.picasso.Picasso;
 public class MovieList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.movie_list);
+        setContentView(R.layout.movielist);
 
         ImageView imageView = (ImageView) findViewById(R.id.imageView);
         Picasso.with(this)

@@ -9,7 +9,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MovieList_v1 extends AppCompatActivity {
 
     ListView list;
     String[] web;
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.movielist_v1);
 
         web = getResources().getStringArray(R.array.dataelements);
         /* This block was commented and uncommented to try out accepting drawables from arrayitems.xml file
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         //imageId = Array[] images;
         //int imageId=images.getResourceId(id,-1);
 
-        CustomList adapter = new CustomList(MainActivity.this, web, imageId);
+        CustomList adapter = new CustomList(MovieList_v1.this, web, imageId);
         list = (ListView) findViewById(R.id.list);
         list.setAdapter(adapter);
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                Toast.makeText(MainActivity.this, "You Clicked at " + web[+position], Toast.LENGTH_SHORT).show();
+                Toast.makeText(MovieList_v1.this, "You Clicked at " + web[+position], Toast.LENGTH_SHORT).show();
 
             }
         });

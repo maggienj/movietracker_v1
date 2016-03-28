@@ -22,8 +22,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".MovieList" />
-
-
+        <activity android:name=".MovieList_v2" />
+        <activity android:name=".ImageTextListViewActivity" />
     </application>
 
 

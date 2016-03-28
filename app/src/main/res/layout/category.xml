@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:paddingLeft="50dp"
     android:paddingRight="50dp"
-    tools:context=".Category">
+    tools:context=".MovieList_v2">
 
     <!-- Row#1 -->
     <TextView
@@ -30,9 +30,12 @@
 
     <Button
         android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/home_icon"
+        android:drawablePadding="10dp"
         android:text="@string/btn_name_cat1"
         android:theme="@style/CatBtn" />
 

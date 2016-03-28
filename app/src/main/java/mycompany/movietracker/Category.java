@@ -12,18 +12,23 @@ public class Category extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.category);
-        // Locate the button in activity_main.xml
         addListenerOnButton();
     }
 
     public void addListenerOnButton() {
         Button btn = (Button) findViewById(R.id.button1);
-        // Capture button clicks
         btn.setOnClickListener(new OnClickListener() {
-
             public void onClick(View v) {
-                // Start NewActivity.class
                 Intent intent = new Intent(Category.this, MovieList.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        Button btn2 = (Button) findViewById(R.id.button2);
+        btn2.setOnClickListener(new OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(Category.this, ImageTextListViewActivity.class);
                 startActivity(intent);
                 finish();
             }
