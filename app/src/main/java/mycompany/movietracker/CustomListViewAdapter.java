@@ -22,7 +22,7 @@ public class CustomListViewAdapter extends ArrayAdapter<RowItem> {
     }
 
     public View getView(int position, View convertView, ViewGroup parent) {
-        ViewHolder holder = null;
+        ViewHolder holder;
         RowItem rowItem = getItem(position);
 
         LayoutInflater mInflater = (LayoutInflater) context
@@ -47,6 +47,11 @@ public class CustomListViewAdapter extends ArrayAdapter<RowItem> {
         return convertView;
     }
 
+    @Override
+    public boolean isEnabled(int position) {
+        return true;
+    }
+
     /*private view holder class*/
     private class ViewHolder {
         ImageView imageView;
@@ -54,4 +59,5 @@ public class CustomListViewAdapter extends ArrayAdapter<RowItem> {
         TextView txtMovieWhen;
         TextView txtMovieWhere;
     }
+
 }

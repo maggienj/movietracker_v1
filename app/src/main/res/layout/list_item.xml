@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="5dip">
+    <!-- ListRow Left side Thumbnail image -->
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:descendantFocusability="blocksDescendants"
+        android:padding="3dip">
 
     <ImageView
         android:id="@+id/icon"
@@ -11,33 +24,54 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp" />
 
+    </LinearLayout>
+    <!-- Rightend Arrow -->
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/arrow" />
+    <!-- City-->
     <TextView
         android:id="@+id/movieName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/icon"
-        android:paddingBottom="10dp"
-        android:textColor="#FFFF5A44"
-        android:textSize="18dp"
-        android:textStyle="bold" />
-
+        android:layout_marginLeft="25dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:paddingBottom="10dip"
+        android:text=""
+        android:textColor="#040404"
+        android:textSize="25dip"
+        android:textStyle="bold"
+        android:typeface="sans" />
+    <!-- Weather Information-->
     <TextView
         android:id="@+id/movieWhen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/movieName"
         android:layout_below="@+id/movieName"
-        android:layout_toRightOf="@+id/icon"
-        android:paddingBottom="10dp"
-        android:textColor="#CC0033"
-        android:textSize="16dp" />
+        android:layout_toRightOf="@+id/thumbnail"
+        android:paddingTop="5dip"
+        android:text=""
+        android:textColor="#343434"
+        android:textSize="15dip" />
 
     <TextView
         android:id="@+id/movieWhere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/movieWhen"
         android:layout_below="@+id/movieWhen"
-        android:layout_toRightOf="@+id/icon"
-        android:paddingLeft="10dp"
-        android:textColor="#3399FF"
-        android:textSize="14dp" />
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:paddingTop="5dip"
+        android:text=""
+        android:textColor="#343434"
+        android:textSize="15dip" />
+
 </RelativeLayout>
+
