@@ -403,7 +403,7 @@
         android:layout_toLeftOf="@+id/smsIcon"
         android:layout_toRightOf="@+id/txtPhoneNo"
         android:paddingLeft="10dp"
-        android:text="Hello please type your number here"
+        android:text="Hello, type phone number here"
         android:textColor="#000000"
         android:textSize="15sp" />
 
