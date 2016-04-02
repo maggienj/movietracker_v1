@@ -6,6 +6,8 @@
     android:descendantFocusability="blocksDescendants"
     android:orientation="horizontal"
     android:padding="5dip">
+
+
     <!-- ListRow Left side Thumbnail image -->
     <LinearLayout
         android:id="@+id/thumbnail"
@@ -18,8 +20,8 @@
 
     <ImageView
         android:id="@+id/icon"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:contentDescription="@string/image"
         android:paddingLeft="10dp"
         android:paddingRight="10dp" />
@@ -39,7 +41,7 @@
         android:id="@+id/movieName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="25dip"
+        android:layout_marginLeft="35dip"
         android:layout_toRightOf="@+id/thumbnail"
         android:paddingBottom="10dip"
         android:text=""
@@ -58,7 +60,7 @@
         android:paddingTop="5dip"
         android:text=""
         android:textColor="#343434"
-        android:textSize="15dip" />
+        android:textSize="25dip" />
 
     <TextView
         android:id="@+id/movieWhere"
@@ -71,7 +73,7 @@
         android:paddingTop="5dip"
         android:text=""
         android:textColor="#343434"
-        android:textSize="15dip" />
+        android:textSize="25dip" />
 
 </RelativeLayout>
 

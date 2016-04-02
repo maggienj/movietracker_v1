@@ -76,4 +76,11 @@ public class ImageTextListViewActivity extends Activity implements AdapterView.O
         // System.out.println("Position " + pos); //check it now in Logcat
     }
 
+
+    public void onClickHome(View arg0) {
+        Intent intent = new Intent(ImageTextListViewActivity.this, Category.class);
+        startActivity(intent);
+        finish();
+    }
+
 }
