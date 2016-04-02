@@ -52,6 +52,16 @@
         android:textColor="#3399FF"
         android:textSize="25sp" />
 
+    <ImageView
+        android:id="@+id/mapBtn1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/movieWhen"
+        android:layout_toRightOf="@+id/movieWhere"
+        android:onClick="onClickLocation"
+        android:src="@drawable/map_icon2"
+        android:text="@string/image" />
+
     <Button
         android:id="@+id/googleSrch"
         android:layout_width="wrap_content"

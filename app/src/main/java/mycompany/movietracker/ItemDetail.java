@@ -3,6 +3,7 @@ package mycompany.movietracker;
 import android.app.Activity;
 import android.app.SearchManager;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.telephony.SmsManager;
 import android.util.Log;
@@ -11,6 +12,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
 
 
 public class ItemDetail extends Activity {
@@ -103,5 +105,25 @@ public class ItemDetail extends Activity {
         Intent intent = new Intent(ItemDetail.this, Category.class);
         startActivity(intent);
         finish();
+    }
+
+    public void onClickLocation(View arg0) {
+        // Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + movieWhere[moviePosition]);
+        // Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+        // mapIntent.setPackage("com.google.android.apps.maps");
+        // startActivity(mapIntent);
+
+
+        // Uri geoLocation = Uri.parse("geo:0,0?q=1600+Amphitheatre+Parkway%2C+CA");
+        // Intent intent1 = new Intent(Intent.ACTION_VIEW,geoLocation);
+        // Intent intent1 = intent.setData(geoLocation);
+        // intent1.setPackage("com.google.android.apps.maps");
+        // if (intent1.resolveActivity(getPackageManager()) != null) {
+        //  startActivity(intent1);
+        // }
+
+        String geoLocation = "http://maps.google.com/maps?q=" + movieWhere[moviePosition];
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(geoLocation));
+        startActivity(mapIntent);
     }
 }
