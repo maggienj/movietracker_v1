@@ -19,7 +19,23 @@ public class ItemDetail extends Activity {
 
     public static final Integer[] images = {R.drawable.proposal,
             R.drawable.bat, R.drawable.alvin, R.drawable.myb, R.drawable.kapoor};
+
+    public static final Integer[] imagesHome = {R.drawable.home_alone2,
+            R.drawable.horse, R.drawable.rodeo, R.drawable.stallion, R.drawable.danny};
+
+
+    public static final Integer[] imagesEng = {R.drawable.avatar,
+            R.drawable.spectre, R.drawable.inside, R.drawable.frozen, R.drawable.year};
+
+    public static final Integer[] imagesInter = {R.drawable.a_moment,
+            R.drawable.human, R.drawable.god, R.drawable.taxi, R.drawable.wonder};
+
+
     String[] movieName;
+    String[] movieNameHome;
+    String[] movieNameEng;
+    String[] movieNameInter;
+
     String[] movieWhen;
     String[] movieWhere;
     Integer moviePosition;
@@ -36,6 +52,8 @@ public class ItemDetail extends Activity {
         ImageView imgMovieIcon = (ImageView) findViewById(R.id.icon);
 
         movieName = getResources().getStringArray(R.array.movieName);
+
+
         movieWhen = getResources().getStringArray(R.array.movieWhen);
         movieWhere = getResources().getStringArray(R.array.movieWhere);
 
@@ -43,11 +61,30 @@ public class ItemDetail extends Activity {
         // getting attached intent data
         // Integer moviePosition = Integer.parseInt(i.getStringExtra("movieId"));
         moviePosition = (Integer) getIntent().getExtras().get("movieId");
+        String movieType = (String) getIntent().getExtras().get("movieType");
+
         /* String movieName = i.getStringExtra("movieName");
         String movieWhen = i.getStringExtra("movieWhen");
         String movieWhere = i.getStringExtra("movieWhere");
         */
+        switch (movieType) {
+            case "Home":
+                movieName = getResources().getStringArray(R.array.movieNameHome);
+                imgMovieIcon.setImageResource(imagesHome[moviePosition]);
+                break;
+            case "Eng":
+                movieName = getResources().getStringArray(R.array.movieNameEng);
+                imgMovieIcon.setImageResource(imagesEng[moviePosition]);
+                break;
+            case "Inter":
+                movieName = getResources().getStringArray(R.array.movieNameInter);
+                imgMovieIcon.setImageResource(imagesInter[moviePosition]);
+                break;
 
+            default:
+                movieName = getResources().getStringArray(R.array.movieName);
+                imgMovieIcon.setImageResource(images[moviePosition]);
+        }
         String dataMovieName = movieName[moviePosition];
         String dataMovieWhen = movieWhen[moviePosition];
         String dataMovieWhere = movieWhere[moviePosition];
@@ -58,7 +95,7 @@ public class ItemDetail extends Activity {
         txtMovieName.setText(dataMovieName);
         txtMovieWhen.setText(dataMovieWhen);
         txtMovieWhere.setText(dataMovieWhere);
-        imgMovieIcon.setImageResource(images[moviePosition]);
+        // imgMovieIcon.setImageResource(images[moviePosition]);
 
 
     }

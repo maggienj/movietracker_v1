@@ -28,6 +28,32 @@
         <item pagename="movie5n"> Kapoor and Sons </item>
     </string-array>
 
+
+    <string-array name="movieNameHome">
+        <item pagename="movie1nh"> Home Alone 2 </item>
+        <item pagename="movie2nh"> War Horse </item>
+        <item pagename="movie3nh"> Rodeo Girl </item>
+        <item pagename="movie4nh"> Midnight Stallion </item>
+        <item pagename="movie5nh"> Danny </item>
+    </string-array>
+
+    <string-array name="movieNameInter">
+        <item pagename="movie1ni"> A Moment To Remember </item>
+        <item pagename="movie2ni"> Human Capital </item>
+        <item pagename="movie3ni"> Hard to be a God </item>
+        <item pagename="movie4ni"> Taxi </item>
+        <item pagename="movie5ni"> The Wonders </item>
+    </string-array>
+
+
+    <string-array name="movieNameEng">
+        <item pagename="movie1ne"> Avatar </item>
+        <item pagename="movie2ne"> Spectre </item>
+        <item pagename="movie3ne"> Inside Out </item>
+        <item pagename="movie4ne"> Frozen Fever </item>
+        <item pagename="movie5ne"> 45 Years </item>
+    </string-array>
+
     <string-array name="movieWhen">
         <item pagename="movie1"> Dec-10-2015 </item>
         <item pagename="movie2"> Jan-7-2016 </item>

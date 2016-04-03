@@ -10,7 +10,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ImageTextListViewActivity extends Activity implements AdapterView.OnItemClickListener {
+public class ImageTextListViewActivity5 extends Activity implements AdapterView.OnItemClickListener {
 
 
     public static final Integer[] images = {R.drawable.proposal,
@@ -23,6 +23,7 @@ public class ImageTextListViewActivity extends Activity implements AdapterView.O
     String[] movieWhere;
 
     // List<HashMap<String, String>> fillMaps = new ArrayList<HashMap<String, String>>();
+
     /**
      * Called when the activity is first created.
      */
@@ -63,7 +64,7 @@ public class ImageTextListViewActivity extends Activity implements AdapterView.O
         // Create an intent
         Intent intent = new Intent(this, ItemDetail.class);
         intent.putExtra("movieId", movieId);
-        intent.putExtra("movieType", "btn1");
+        intent.putExtra("movieType", "btn5");
         // Start sms details activity
         startActivity(intent);
 
@@ -79,7 +80,7 @@ public class ImageTextListViewActivity extends Activity implements AdapterView.O
 
 
     public void onClickHome(View arg0) {
-        Intent intent = new Intent(ImageTextListViewActivity.this, Category.class);
+        Intent intent = new Intent(ImageTextListViewActivity5.this, Category.class);
         startActivity(intent);
         finish();
     }

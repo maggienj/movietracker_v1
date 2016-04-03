@@ -28,7 +28,7 @@ public class Category extends AppCompatActivity {
         Button btn2 = (Button) findViewById(R.id.button2);
         btn2.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(Category.this, ImageTextListViewActivity.class);
+                Intent intent = new Intent(Category.this, ImageTextListViewActivity2.class);
                 startActivity(intent);
                 finish();
             }
@@ -37,7 +37,7 @@ public class Category extends AppCompatActivity {
         Button btn3 = (Button) findViewById(R.id.button3);
         btn3.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(Category.this, ImageTextListViewActivity.class);
+                Intent intent = new Intent(Category.this, ImageTextListViewActivity3.class);
                 startActivity(intent);
                 finish();
             }
@@ -47,7 +47,7 @@ public class Category extends AppCompatActivity {
         Button btn4 = (Button) findViewById(R.id.button4);
         btn4.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(Category.this, ImageTextListViewActivity.class);
+                Intent intent = new Intent(Category.this, ImageTextListViewActivity4.class);
                 startActivity(intent);
                 finish();
             }
@@ -57,7 +57,7 @@ public class Category extends AppCompatActivity {
         Button btn5 = (Button) findViewById(R.id.button5);
         btn5.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(Category.this, ImageTextListViewActivity.class);
+                Intent intent = new Intent(Category.this, ImageTextListViewActivity5.class);
                 startActivity(intent);
                 finish();
             }

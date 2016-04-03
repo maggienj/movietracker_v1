@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:layout_marginBottom="10dp"
     tools:context=".ItemDetail">
 
     <ImageView
@@ -67,9 +68,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/movieWhere"
+        android:layout_marginLeft="10dp"
         android:background="#ff9633"
         android:onClick="onClickGoogleSrch"
-        android:paddingLeft="10dp"
         android:text="More Online"
         android:textColor="#f7fafa"
         android:textSize="15sp"
@@ -392,6 +393,21 @@
     </TableLayout>
 
 
+
+    <TextView
+        android:id="@+id/txtImp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtPhoneMsg"
+        android:layout_below="@+id/tableLayout4"
+        android:paddingLeft="10dp"
+        android:paddingTop="120dp"
+        android:text="Creating Impressions:"
+        android:textColor="#f25c16"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
     <TextView
         android:id="@+id/txtPhoneNo"
         android:layout_width="wrap_content"
@@ -401,7 +417,7 @@
         android:paddingTop="100dp"
         android:text="Enter SMS PhoneNumber"
         android:textColor="#12962a"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
 
@@ -426,7 +442,7 @@
         android:paddingLeft="10dp"
         android:text="Enter SMS Message"
         android:textColor="#12962a"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
 
@@ -438,7 +454,7 @@
         android:layout_toLeftOf="@+id/smsIcon"
         android:layout_toRightOf="@+id/txtPhoneMsg"
         android:paddingLeft="10dp"
-        android:text="Thinking of you! Remember, we watched this movie together? "
+        android:text="Thinking of you! Remember, we watched this movie together, a year ago, same date? "
         android:textColor="#000000"
         android:textSize="15sp" />
 
@@ -511,5 +527,16 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:src="@drawable/gplus2" />
+
+    <ImageView
+        android:id="@+id/email_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@id/gplus_icon"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/image"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/email2" />
 
 </RelativeLayout>
