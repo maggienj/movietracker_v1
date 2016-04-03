@@ -14,7 +14,7 @@ public class ImageTextListViewActivity2 extends Activity implements AdapterView.
 
 
     public static final Integer[] images = {R.drawable.home_alone2,
-            R.drawable.horse, R.drawable.rodeo, R.drawable.stallion, R.drawable.danny};
+            R.drawable.danny, R.drawable.rodeo, R.drawable.stallion, R.drawable.horse};
 
     ListView listView;
     List<RowItem> rowItems;

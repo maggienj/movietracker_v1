@@ -31,10 +31,10 @@
 
     <string-array name="movieNameHome">
         <item pagename="movie1nh"> Home Alone 2 </item>
-        <item pagename="movie2nh"> War Horse </item>
+        <item pagename="movie2nh"> Danny </item>
         <item pagename="movie3nh"> Rodeo Girl </item>
         <item pagename="movie4nh"> Midnight Stallion </item>
-        <item pagename="movie5nh"> Danny </item>
+        <item pagename="movie5nh"> War Horse </item>
     </string-array>
 
     <string-array name="movieNameInter">

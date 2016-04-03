@@ -80,68 +80,76 @@
         android:id="@+id/tableLayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/icon">
-
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/movieWhere"
+        android:layout_toRightOf="@+id/icon"
+        android:paddingTop="10dp">
         <TableRow
-            android:id="@+id/tableRow1"
-            android:layout_width="match_parent"
+            android:id="@+id/tableRowC1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-
             <CheckBox
                 android:id="@+id/cbox1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:checked="true" />
-
+                android:checked="false" />
             <TextView
                 android:id="@+id/cbox1_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Watched with Family"
                 android:textColor="#18548f"
-                android:textSize="15sp" />
+                android:textSize="20sp" />
+        </TableRow>
 
+        <TableRow
+            android:id="@+id/tableRowC2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
             <CheckBox
                 android:id="@+id/cbox2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-
             <TextView
                 android:id="@+id/cbox2_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Watched with Friends"
                 android:textColor="#18548f"
-                android:textSize="15sp" />
+                android:textSize="20sp" />
+        </TableRow>
 
+        <TableRow
+            android:id="@+id/tableRowC3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
             <CheckBox
                 android:id="@+id/cbox3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-
             <TextView
                 android:id="@+id/cbox3_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Watched with a Date"
                 android:textColor="#18548f"
-                android:textSize="15sp" />
+                android:textSize="20sp" />
         </TableRow>
     </TableLayout>
 
     <!-- this is the second table for radio butons -->
     <TableLayout
         android:id="@+id/tableLayout2"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tableLayout1"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/icon"
         android:paddingLeft="10dp"
-        android:paddingTop="20dp">
+        android:paddingTop="10dp">
 
         <TableRow
-            android:id="@+id/tableRow3"
-            android:layout_width="match_parent"
+            android:id="@+id/tableRowRM1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <TextView
@@ -150,9 +158,14 @@
                 android:layout_height="wrap_content"
                 android:text="Rate the Moment:"
                 android:textColor="#18548f"
-                android:textSize="15sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
+        </TableRow>
 
+        <TableRow
+            android:id="@+id/tableRowRM2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
             <RadioGroup
                 android:id="@+id/radioGroup1"
                 android:layout_width="wrap_content"
@@ -164,32 +177,32 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
-                    android:orientation="horizontal"
-                    android:text="Good" />
+                    android:text="Good"
+                    android:textSize="18sp" />
 
                 <RadioButton
                     android:id="@+id/radio2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
-                    android:orientation="horizontal"
-                    android:text="Better" />
+                    android:text="Better"
+                    android:textSize="18sp" />
 
                 <RadioButton
                     android:id="@+id/radio3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="true"
-                    android:orientation="horizontal"
-                    android:text="TheBest" />
+                    android:text="TheBest"
+                    android:textSize="18sp" />
 
                 <RadioButton
                     android:id="@+id/radio4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
-                    android:orientation="horizontal"
-                    android:text="Never Again" />
+                    android:text="Never Again"
+                    android:textSize="18sp" />
 
             </RadioGroup>
         </TableRow>
@@ -199,15 +212,14 @@
     <!-- this is the third table for rate-the-movie radio butons -->
     <TableLayout
         android:id="@+id/tableLayout3"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tableLayout2"
-        android:layout_centerHorizontal="true"
         android:paddingLeft="10dp"
-        android:paddingTop="20dp">
+        android:paddingTop="10dp">
 
         <TableRow
-            android:id="@+id/tableRow4"
+            android:id="@+id/tableRowRMo1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -217,9 +229,14 @@
                 android:layout_height="wrap_content"
                 android:text="Rate the Movie:"
                 android:textColor="#18548f"
-                android:textSize="15sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
+        </TableRow>
 
+        <TableRow
+            android:id="@+id/tableRowRMo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
             <RadioGroup
                 android:id="@+id/radioGroup2"
                 android:layout_width="wrap_content"
@@ -232,7 +249,8 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:orientation="horizontal"
-                    android:text="Good" />
+                    android:text="Good"
+                    android:textSize="18sp" />
 
                 <RadioButton
                     android:id="@+id/radio22"
@@ -240,7 +258,8 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:orientation="horizontal"
-                    android:text="Better" />
+                    android:text="Better"
+                    android:textSize="18sp" />
 
                 <RadioButton
                     android:id="@+id/radio23"
@@ -248,7 +267,8 @@
                     android:layout_height="wrap_content"
                     android:checked="true"
                     android:orientation="horizontal"
-                    android:text="TheBest" />
+                    android:text="TheBest"
+                    android:textSize="18sp" />
 
                 <RadioButton
                     android:id="@+id/radio24"
@@ -256,7 +276,8 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:orientation="horizontal"
-                    android:text="Never Again" />
+                    android:text="Never Again"
+                    android:textSize="18sp" />
 
             </RadioGroup>
         </TableRow>
@@ -283,16 +304,16 @@
                 android:layout_height="wrap_content"
                 android:text="Comment on the Moment:"
                 android:textColor="#18548f"
-                android:textSize="15sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editCommMoment"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/activity_horizontal_margin"
                 android:layout_height="wrap_content"
-                android:text="Had a great moment with my family"
+                android:text="Had a great moment with my family."
                 android:textColor="#18548f"
-                android:textSize="15sp" />
+                android:textSize="18sp" />
         </TableRow>
 
         <TableRow
@@ -306,7 +327,7 @@
                 android:layout_height="wrap_content"
                 android:text="Comment on the Movie:"
                 android:textColor="#18548f"
-                android:textSize="15sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -315,7 +336,7 @@
                 android:layout_height="wrap_content"
                 android:text="This is a very funny movie."
                 android:textColor="#18548f"
-                android:textSize="15sp" />
+                android:textSize="18sp" />
         </TableRow>
 
 
@@ -330,7 +351,7 @@
                 android:layout_height="wrap_content"
                 android:text="Which Theater?:"
                 android:textColor="#18548f"
-                android:textSize="15sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -339,7 +360,7 @@
                 android:layout_height="wrap_content"
                 android:text="Regal Cinemas"
                 android:textColor="#18548f"
-                android:textSize="15sp" />
+                android:textSize="18sp" />
         </TableRow>
 
         <TableRow
@@ -353,7 +374,7 @@
                 android:layout_height="wrap_content"
                 android:text="Any Channels/NetFlix/etc?"
                 android:textColor="#18548f"
-                android:textSize="15sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -362,7 +383,7 @@
                 android:layout_height="wrap_content"
                 android:text="n/a"
                 android:textColor="#18548f"
-                android:textSize="15sp" />
+                android:textSize="18sp" />
         </TableRow>
 
 
@@ -377,7 +398,7 @@
                 android:layout_height="wrap_content"
                 android:text="Dining Out (after movie)?"
                 android:textColor="#18548f"
-                android:textSize="15sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -386,77 +407,96 @@
                 android:layout_height="wrap_content"
                 android:text="Yes, at the Bahama Breeze"
                 android:textColor="#18548f"
-                android:textSize="15sp" />
+                android:textSize="18sp" />
         </TableRow>
-
-
     </TableLayout>
 
 
-
-    <TextView
-        android:id="@+id/txtImp"
+    <!-- this is a new table for SMS -->
+    <TableLayout
+        android:id="@+id/tableLayoutSMS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/txtPhoneMsg"
+        android:layout_alignParentBottom="true"
         android:layout_below="@+id/tableLayout4"
+        android:layout_marginRight="60dp"
         android:paddingLeft="10dp"
-        android:paddingTop="120dp"
-        android:text="Creating Impressions:"
-        android:textColor="#f25c16"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:paddingTop="20dp">
 
-
-    <TextView
-        android:id="@+id/txtPhoneNo"
+        <TableRow
+            android:id="@+id/trsms1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:paddingLeft="10dp"
-        android:paddingTop="100dp"
-        android:text="Enter SMS PhoneNumber"
-        android:textColor="#12962a"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+            android:layout_height="wrap_content">
 
 
-    <EditText
-        android:id="@+id/editTextPhoneNo"
+            <TextView
+                android:id="@+id/txtImp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Creating Impressions:"
+                android:textColor="#f25c16"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/trsms4"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/smsIcon"
-        android:layout_toRightOf="@+id/txtPhoneNo"
-        android:paddingLeft="10dp"
-        android:text="Hello, type phone number here"
-        android:textColor="#000000"
-        android:textSize="15sp" />
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtPhoneMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter SMS Message"
+                android:textColor="#12962a"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trsms5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextSMS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thinking of you! Remember, we watched this movie together, a year ago, same date? "
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </TableRow>
 
 
-    <TextView
-        android:id="@+id/txtPhoneMsg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/editTextPhoneNo"
-        android:paddingLeft="10dp"
-        android:text="Enter SMS Message"
-        android:textColor="#12962a"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        <TableRow
+            android:id="@+id/trsms2"
+            android:layout_width="@dimen/activity_horizontal_margin"
+            android:layout_height="wrap_content">
 
+            <TextView
+                android:id="@+id/txtPhoneNo"
+                android:layout_width="wrap_content"
+                android:text="Enter SMS PhoneNumber"
+                android:textColor="#12962a"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
 
-    <EditText
-        android:id="@+id/editTextSMS"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/editTextPhoneNo"
-        android:layout_toLeftOf="@+id/smsIcon"
-        android:layout_toRightOf="@+id/txtPhoneMsg"
-        android:paddingLeft="10dp"
-        android:text="Thinking of you! Remember, we watched this movie together, a year ago, same date? "
-        android:textColor="#000000"
-        android:textSize="15sp" />
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextPhoneNo"
+                android:layout_width="@dimen/activity_horizontal_margin"
+                android:layout_height="wrap_content"
+                android:text="Hello, type phone number here"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </TableRow>
+    </TableLayout>
 
     <ImageView
         android:id="@+id/smsIcon"

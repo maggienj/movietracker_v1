@@ -21,7 +21,7 @@ public class ItemDetail extends Activity {
             R.drawable.bat, R.drawable.alvin, R.drawable.myb, R.drawable.kapoor};
 
     public static final Integer[] imagesHome = {R.drawable.home_alone2,
-            R.drawable.horse, R.drawable.rodeo, R.drawable.stallion, R.drawable.danny};
+            R.drawable.danny, R.drawable.rodeo, R.drawable.stallion, R.drawable.horse};
 
 
     public static final Integer[] imagesEng = {R.drawable.avatar,
@@ -59,14 +59,9 @@ public class ItemDetail extends Activity {
 
         Intent i = getIntent();
         // getting attached intent data
-        // Integer moviePosition = Integer.parseInt(i.getStringExtra("movieId"));
         moviePosition = (Integer) getIntent().getExtras().get("movieId");
         String movieType = (String) getIntent().getExtras().get("movieType");
 
-        /* String movieName = i.getStringExtra("movieName");
-        String movieWhen = i.getStringExtra("movieWhen");
-        String movieWhere = i.getStringExtra("movieWhere");
-        */
         switch (movieType) {
             case "Home":
                 movieName = getResources().getStringArray(R.array.movieNameHome);
@@ -91,7 +86,6 @@ public class ItemDetail extends Activity {
 
 
         // displaying selected Movie name
-
         txtMovieName.setText(dataMovieName);
         txtMovieWhen.setText(dataMovieWhen);
         txtMovieWhere.setText(dataMovieWhere);
@@ -102,11 +96,8 @@ public class ItemDetail extends Activity {
 
 
     // Method to send SMS using SMS Manager
-
     public void onSMSClick(View view) {
-
         //Declare the button and the tetviews to input number and the message
-
         ImageView smsIcon = (ImageView) findViewById(R.id.smsIcon);
         EditText txtphoneNo = (EditText) findViewById(R.id.editTextPhoneNo);
         EditText txtMessage = (EditText) findViewById(R.id.editTextSMS);
@@ -149,7 +140,6 @@ public class ItemDetail extends Activity {
         // Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
         // mapIntent.setPackage("com.google.android.apps.maps");
         // startActivity(mapIntent);
-
 
         // Uri geoLocation = Uri.parse("geo:0,0?q=1600+Amphitheatre+Parkway%2C+CA");
         // Intent intent1 = new Intent(Intent.ACTION_VIEW,geoLocation);
