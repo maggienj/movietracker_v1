@@ -135,11 +135,13 @@ public class ItemDetail extends Activity {
         finish();
     }
 
+
     public void onClickLocation(View arg0) {
-        // Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + movieWhere[moviePosition]);
-        // Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-        // mapIntent.setPackage("com.google.android.apps.maps");
-        // startActivity(mapIntent);
+        Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + movieWhere[moviePosition]);
+        // Uri gmmIntentUri = Uri.parse("geo:0,0?q=Princeton,NJ");
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+        mapIntent.setPackage("com.google.android.apps.maps");
+        startActivity(mapIntent);
 
         // Uri geoLocation = Uri.parse("geo:0,0?q=1600+Amphitheatre+Parkway%2C+CA");
         // Intent intent1 = new Intent(Intent.ACTION_VIEW,geoLocation);
@@ -149,8 +151,8 @@ public class ItemDetail extends Activity {
         //  startActivity(intent1);
         // }
 
-        String geoLocation = "http://maps.google.com/maps?q=" + movieWhere[moviePosition];
-        Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(geoLocation));
-        startActivity(mapIntent);
+        // String geoLocation = "http://maps.google.com/maps?q=" + movieWhere[moviePosition];
+        // Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(geoLocation));
+        // startActivity(mapIntent);
     }
 }
