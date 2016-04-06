@@ -1,4 +1,4 @@
-package mycompany.movietracker;
+package mycompany.movietracker_v1;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,7 +10,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ImageTextListViewActivity extends Activity implements AdapterView.OnItemClickListener {
+public class ImageTextListViewActivityPct extends Activity implements AdapterView.OnItemClickListener {
 
 
     public static final Integer[] images = {R.drawable.proposal,
@@ -43,8 +43,8 @@ public class ImageTextListViewActivity extends Activity implements AdapterView.O
         }
 
         listView = (ListView) findViewById(R.id.list);
-        CustomListViewAdapter adapter = new CustomListViewAdapter(this,
-                R.layout.list_item, rowItems);
+        CustomListViewAdapterPct adapter = new CustomListViewAdapterPct(this,
+                R.layout.list_itempct, rowItems);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(this);
@@ -79,7 +79,7 @@ public class ImageTextListViewActivity extends Activity implements AdapterView.O
 
 
     public void onClickHome(View arg0) {
-        Intent intent = new Intent(ImageTextListViewActivity.this, Category.class);
+        Intent intent = new Intent(ImageTextListViewActivityPct.this, Category.class);
         startActivity(intent);
         finish();
     }

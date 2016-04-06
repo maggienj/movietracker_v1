@@ -1,4 +1,4 @@
-package mycompany.movietracker;
+package mycompany.movietracker_v1;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,12 +11,12 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class CustomListViewAdapter extends ArrayAdapter<RowItem> {
+public class CustomListViewAdapterPct extends ArrayAdapter<RowItem> {
 
     Context context;
 
-    public CustomListViewAdapter(Context context, int resourceId,
-                                 List<RowItem> items) {
+    public CustomListViewAdapterPct(Context context, int resourceId,
+                                    List<RowItem> items) {
         super(context, resourceId, items);
         this.context = context;
     }
@@ -28,7 +28,7 @@ public class CustomListViewAdapter extends ArrayAdapter<RowItem> {
         LayoutInflater mInflater = (LayoutInflater) context
                 .getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
         if (convertView == null) {
-            convertView = mInflater.inflate(R.layout.list_item, null);
+            convertView = mInflater.inflate(R.layout.list_itempct, null);
             holder = new ViewHolder();
             holder.txtMovieName = (TextView) convertView.findViewById(R.id.movieName);
             holder.txtMovieWhen = (TextView) convertView.findViewById(R.id.movieWhen);

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MovieTracker</string>
+    <string name="app_name">movietracker_v1</string>
 
     <string name="app_title">Movie Tracker</string>
     <string name="app_title1">Movie</string>

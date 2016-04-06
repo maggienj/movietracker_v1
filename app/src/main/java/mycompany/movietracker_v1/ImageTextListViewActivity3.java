@@ -1,4 +1,4 @@
-package mycompany.movietracker;
+package mycompany.movietracker_v1;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,11 +10,13 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ImageTextListViewActivity2 extends Activity implements AdapterView.OnItemClickListener {
+public class ImageTextListViewActivity3 extends Activity implements AdapterView.OnItemClickListener {
 
 
-    public static final Integer[] images = {R.drawable.home_alone2,
-            R.drawable.danny, R.drawable.rodeo, R.drawable.stallion, R.drawable.horse};
+    // public static final Integer[] images = {R.drawable.a_moment,
+    //      R.drawable.human, R.drawable.god, R.drawable.taxi, R.drawable.wonder};
+    public static final Integer[] images = {R.drawable.avatar,
+            R.drawable.spectre, R.drawable.inside, R.drawable.frozen, R.drawable.year};
 
     ListView listView;
     List<RowItem> rowItems;
@@ -32,7 +34,7 @@ public class ImageTextListViewActivity2 extends Activity implements AdapterView.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.image_list_activity);
 
-        movieName = getResources().getStringArray(R.array.movieNameHome);
+        movieName = getResources().getStringArray(R.array.movieNameEng);
         movieWhen = getResources().getStringArray(R.array.movieWhen);
         movieWhere = getResources().getStringArray(R.array.movieWhere);
 
@@ -64,7 +66,7 @@ public class ImageTextListViewActivity2 extends Activity implements AdapterView.
         // Create an intent
         Intent intent = new Intent(this, ItemDetail.class);
         intent.putExtra("movieId", movieId);
-        intent.putExtra("movieType", "Home");
+        intent.putExtra("movieType", "Eng");
         // Start sms details activity
         startActivity(intent);
 
@@ -80,7 +82,7 @@ public class ImageTextListViewActivity2 extends Activity implements AdapterView.
 
 
     public void onClickHome(View arg0) {
-        Intent intent = new Intent(ImageTextListViewActivity2.this, Category.class);
+        Intent intent = new Intent(ImageTextListViewActivity3.this, Category.class);
         startActivity(intent);
         finish();
     }

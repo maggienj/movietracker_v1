@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="mycompany.movietracker"
+    package="mycompany.movietracker_v1"
     android:versionCode="1"
     android:versionName="1.0">
 
@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="mycompany.movietracker.Category"
+            android:name="mycompany.movietracker_v1.Category"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +28,9 @@
         <activity android:name=".ImageTextListViewActivity3" />
         <activity android:name=".ImageTextListViewActivity4" />
         <activity android:name=".ImageTextListViewActivity5" />
+        <activity android:name=".ImageTextListViewActivityPct" />
         <activity android:name=".ItemDetail" />
+        <activity android:name=".ItemDetailPct" />
         <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
              App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
         <meta-data

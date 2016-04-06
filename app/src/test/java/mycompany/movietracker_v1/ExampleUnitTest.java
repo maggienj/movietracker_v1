@@ -1,4 +1,4 @@
-package mycompany.movietracker;
+package mycompany.movietracker_v1;
 
 import org.junit.Test;
 
